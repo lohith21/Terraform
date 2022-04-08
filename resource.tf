@@ -3,5 +3,6 @@ resource "aws_instance" "myvm01" {
   instance_type = "t2.micro"
 tags = {
   Name = local.name
+  env = "Prod"
 }
 }
