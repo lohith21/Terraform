@@ -4,5 +4,6 @@ resource "aws_instance" "myvm01" {
 tags = {
   Name = local.name
   env = "Prod"
+  owner = var.HR
 }
 }
